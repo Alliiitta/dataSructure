@@ -77,27 +77,27 @@ class List:
     
 lst = List()
 while True:
-    print("1-Input")
-    print("2-Summation")
-    print("3-Multiply")
-    print("4-Exit")
+  print("1-Input")
+  print("2-Summation")
+  print("3-Multiply")
+  print("4-Exit")
    
-    s = int(input("Enter Order Number: "))
+  s = int(input("Enter Order Number: "))
 
-    if s == 1:
-        C1 = int(input("Enter C1: "))
-        Power1 = int(input("Enter Power1: "))
-        lst.insert(C1, Power1)
-        C2 = int(input("Enter C2: "))
-        Power2 = int(input("Enter Power2: "))
-        lst.insert(C2, Power2)
-    elif s == 2:
-        lst.add(C1, Power1, C2, Power2)
-        print(lst.get(0))
-    elif s == 3:
-        lst.mul(C1, Power1, C2, Power2)
-        print(lst.get(0))
-    elif s == 4:
-        break
-    else:
-        print("Invalid Order number")
+  if s == 1:
+    C1 = int(input("Enter C1: "))
+    Power1 = int(input("Enter Power1: "))
+    lst.insert(C1, Power1)
+    C2 = int(input("Enter C2: "))
+    Power2 = int(input("Enter Power2: "))
+    lst.insert(C2, Power2)
+  elif s == 2:
+    lst.add(C1, Power1, C2, Power2)
+    print(lst.get(0))
+  elif s == 3:
+    lst.mul(C1, Power1, C2, Power2)
+    print(lst.get(0))
+  elif s == 4:
+    break
+  else:
+    print("Invalid Order number")
