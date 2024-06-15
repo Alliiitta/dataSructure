@@ -69,30 +69,14 @@ n = int(input("Enter a Len of list: "))
 for i in range(n):
     num = int(input("Enter a number: "))
     A.append(num)
-A = [1,10,9,4,7,11,2,3,6,5]
+     
 heap = Max_Heap()
 heap.build_heap_with_bubble_down(A)
-print(heap.heap)
+
 sort = []
 for i in A:
     m = heap.del_max()
-    # print(m)
     sort.append(m)
-
+     
 sort.reverse()
 print(sort)
-
-
-
-# heap = Max_Heap()
-# heap.build_heap_with_bubble_down([1,10,9,4,7,11,2,3,6,5])
-# print(heap.heap)
-# print (heap.del_max())
-# heap.insert(8)
-# print(heap.heap)
-# print (heap.del_max())
-# print (heap.del_max())
-# print (heap.del_max())
-# print (heap.del_max())
-# print(heap.heap)
-# print (heap.size())
